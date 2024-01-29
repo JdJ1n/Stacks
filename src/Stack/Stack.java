@@ -1,7 +1,7 @@
 package Stack;
 
 public interface Stack<E> {
-    E push(E item);
+    void push(E e);
     E pop();
     E peek();
     boolean empty();

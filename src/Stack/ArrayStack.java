@@ -9,17 +9,16 @@ public class ArrayStack<E> implements Stack<E> {
         elements = (E[]) new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
-    public E push(E item) {
+    public void push(E e) {
         if (size == elements.length) {
-            throw new IllegalStateException("Cannot add to full stack");
+            throw new IllegalStateException("The stack is full");
         }
-        elements[size++] = item;
-        return item;
+        elements[size++] = e;
     }
 
     public E pop() {
-        if (size == 0) {
-            throw new IllegalStateException("Cannot pop from empty stack");
+        if (empty()) {
+            throw new IllegalStateException("The stack is empty");
         }
         E result = elements[--size];
         elements[size] = null;
