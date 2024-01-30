@@ -15,10 +15,10 @@ public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<
         max = maxSize;
     }
 
-    // Ceci est la méthode isLatestMaximaTheLargest qui vérifie
-    // si le dernier point de convexité est le plus grand parmi tous les points de convexité enregistrés.
-    public boolean isLatestMaximaTheLargest() {
-        return (top > 1 && elements[top].compareTo(elements[top - 1]) < 0 && elements[max].compareTo(elements[top - 1]) < 0);
+    // Ceci est la méthode isLatestMaxima qui vérifie
+    // si le dernier élément est un point de convexité.
+    public boolean isLatestMaxima() {
+        return (top > 1 && elements[top].compareTo(elements[top - 1]) < 0);
     }
 
     // Ceci est la méthode push qui ajoute un élément à la pile.
@@ -32,7 +32,7 @@ public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<
         } else {
             //Si l’élément précédent est un maximum local et qu’il est plus grand que tous les maximums enregistrés
             // alors il est également stocké dans la pile max.
-            if (isLatestMaximaTheLargest()) {
+            if (isLatestMaxima() && elements[max].compareTo(elements[top - 1]) < 0) {
                 elements[--max] = elements[top - 1];
             }
             elements[++top] = element;
@@ -44,14 +44,15 @@ public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");  // Si la pile est vide, une exception est levée.
         }
-        E result = elements[top--];
         //Si l’élément qui va être désempilé est l’élément suivant du maximum enregistré
         //alors un élément est également désempilé de la pile max, car après cette opération de désempilage
         //le maximum deviendra l’élément au sommet de la pile
         //il n’est donc pas nécessaire de continuer à le stocker dans la pile max.
-        if (isLatestMaximaTheLargest()) {
-            elements[++max] = null;
+        if (isLatestMaxima() && elements[top - 1].compareTo(elements[max]) < 0 || top == 0) {
+            max++;
+            elements[max - 1] = null;
         }
+        E result = elements[top--];
         elements[top + 1] = null;
         return result;
     }

@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="3stackfinished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2bNWFvx7BfaInO38QGzpzHMaXVS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,16 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Eclipse\workspace\tp1_ift2015\src" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -86,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706612634305</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="3stackfinished">
+      <created>1706639929476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706639929476</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
