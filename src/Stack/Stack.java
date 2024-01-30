@@ -1,9 +1,17 @@
+//IFT2015_TP1
+//Jiadong Jin 20150692
 package Stack;
 
 public interface Stack<E> {
-    void push(E e);
+    void push(E element);
+
     E pop();
-    E peek();
-    boolean empty();
-    int search(Object o);
+
+    E top();
+
+    int size();
+
+    boolean isEmpty();
+
+    String toString();
 }

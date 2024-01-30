@@ -1,10 +1,18 @@
+//IFT2015_TP1
+//Jiadong Jin 20150692
 package DoubleStack;
 
 public interface DoubleStack<E> {
-    E push(E item, boolean one);
+    boolean push(boolean one, E e);
+
     E pop(boolean one);
+
     E top(boolean one);
+
     int size(boolean one);
+
     boolean isFull();
+
     void print();
 }
+

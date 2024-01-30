@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="create classes">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoubleStack/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SpecialStack/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoubleStack/DoubleStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/DoubleStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Stack.java" afterDir="false" />
     </list>
@@ -74,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706552518036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create classes">
+      <created>1706571638922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706571638922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
