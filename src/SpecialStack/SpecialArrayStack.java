@@ -8,6 +8,7 @@ public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<
     private int max;  // Ceci est un pointeur vers le point de convexité.
     private static final int maxSize = 100;
 
+    @SuppressWarnings(value = "unchecked")
     public SpecialArrayStack() {
         elements = (E[]) new Comparable[maxSize];
         top = -1;
@@ -82,7 +83,7 @@ public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<
                 sb.append(", ");
             }
         }
-        sb.append("\nEspace pour le stockage des valeurs maximales:" + String.valueOf(maxSize - max));
+        sb.append("\nEspace pour le stockage des valeurs maximales:").append(maxSize - max);
         return sb.toString();
     }
 

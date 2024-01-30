@@ -8,6 +8,7 @@ public class ArrayStack<E> implements Stack<E> {
     private static final int maxSize = 100;
 
     // Constructeur par défaut
+    @SuppressWarnings(value = "unchecked")
     public ArrayStack() {
         elements = (E[]) new Object[maxSize];
         this.size = 0;

@@ -11,6 +11,7 @@ public class Test {
         for (int i = 0; i < 48; i++) {
             stack.push(false, i);
         }
+        System.out.println((stack.push(true, 53)));
 
         stack.print();
 

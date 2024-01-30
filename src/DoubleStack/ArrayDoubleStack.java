@@ -8,6 +8,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     private int top2;
     private static final int maxSize = 100;
 
+    @SuppressWarnings(value = "unchecked")
     // Constructeur par défaut
     public ArrayDoubleStack() {
         elements = (E[]) new Object[maxSize];
@@ -18,7 +19,8 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     // Méthode pour ajouter un élément à la pile. Lance une exception si la pile est pleine.
     public boolean push(boolean one, E element) {
         if (isFull()) {
-            throw new IllegalStateException("La pile est pleine.");
+            System.out.println("La pile est pleine.");
+            return false;
         }
         if (one) {
             elements[++top1] = element;
@@ -33,7 +35,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
         if (isEmpty(one)) {
             throw new IllegalStateException("La pile " + (one ? "1" : "2") + " est vide.");
         }
-        E result = one ? (E) elements[top1--] : (E) elements[top2++];
+        E result = one ? elements[top1--] : elements[top2++];
         if (one) {
             elements[top1 + 1] = null;
         } else {
@@ -47,7 +49,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
         if (isEmpty(one)) {
             throw new IllegalStateException("La pile " + (one ? "1" : "2") + " est vide.");
         }
-        return one ? (E) elements[top1] : (E) elements[top2];
+        return one ? elements[top1] : elements[top2];
     }
 
     // Méthode pour obtenir la taille actuelle de la pile.
