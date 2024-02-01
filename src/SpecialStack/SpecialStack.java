@@ -2,12 +2,12 @@
 //Jiadong Jin 20150692
 package SpecialStack;
 
-public interface SpecialStack<E extends Comparable<E>> {
-    void push(E element);
+public interface SpecialStack<Integer> {
+    void push(Integer element);
 
-    E pop();
+    Integer pop();
 
-    E top();
+    Integer top();
 
     int size();
 
@@ -15,6 +15,6 @@ public interface SpecialStack<E extends Comparable<E>> {
 
     String toString();
 
-    E getMax();
+    Integer getMax();
 }
 

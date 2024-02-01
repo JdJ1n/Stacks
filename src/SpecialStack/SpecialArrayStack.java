@@ -2,99 +2,113 @@
 //Jiadong Jin 20150692
 package SpecialStack;
 
-public class SpecialArrayStack<E extends Comparable<E>> implements SpecialStack<E> {
-    private E[] elements;
-    private int top;
-    private int max;  // Ceci est un pointeur vers le point de convexité.
+public class SpecialArrayStack implements SpecialStack<Integer> {
+    private Integer[] elements;
+    private int top; // L'indice du sommet de la pile
+    private Integer max; // L'élément maximum dans la pile
     private static final int maxSize = 100;
 
-    @SuppressWarnings(value = "unchecked")
+    // Le constructeur de la pile
     public SpecialArrayStack() {
-        elements = (E[]) new Comparable[maxSize];
+        elements = new Integer[maxSize];
         top = -1;
-        max = maxSize;
     }
 
-    // Ceci est la méthode isLatestMaxima qui vérifie
-    // si le dernier élément est un point de convexité.
-    public boolean isLatestMaxima() {
-        return (top > 1 && elements[top].compareTo(elements[top - 1]) < 0);
-    }
-
-    // Ceci est la méthode push qui ajoute un élément à la pile.
-    public void push(E element) {
+    // La méthode pour ajouter un élément à la pile
+    public void push(Integer element) {
         if (isFull()) {
             throw new IllegalStateException("La pile est pleine.");  // Si la pile est pleine, une exception est levée.
         }
+        // Si la pile est vide, ajoute l'élément au sommet de la pile et met à jour le maximum
         if (isEmpty()) {
             elements[++top] = element;
-            elements[--max] = element;
+            max = element;
         } else {
-            //Si l’élément précédent est un maximum local et qu’il est plus grand que tous les maximums enregistrés
-            // alors il est également stocké dans la pile max.
-            if (isLatestMaxima() && elements[max].compareTo(elements[top - 1]) < 0) {
-                elements[--max] = elements[top - 1];
+            // Si l'élément est plus grand que le maximum actuel, stocke une valeur spéciale et met à jour le maximum
+            if (max < element) {
+                elements[++top] = 2 * element - max;
+                max = element;
+            } else {
+                // Sinon, ajoute simplement l'élément au sommet de la pile
+                elements[++top] = element;
             }
-            elements[++top] = element;
         }
     }
 
-    // Ceci est la méthode pop qui retire un élément de la pile.
-    public E pop() {
+    // La méthode pour retirer un élément de la pile
+    public Integer pop() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");  // Si la pile est vide, une exception est levée.
         }
-        //Si l’élément qui va être désempilé est l’élément suivant du maximum enregistré
-        //alors un élément est également désempilé de la pile max, car après cette opération de désempilage
-        //le maximum deviendra l’élément au sommet de la pile
-        //il n’est donc pas nécessaire de continuer à le stocker dans la pile max.
-        if (isLatestMaxima() && elements[top - 1].compareTo(elements[max]) < 0 || top == 0) {
-            max++;
-            elements[max - 1] = null;
+        // Récupère l'élément au sommet de la pile
+        Integer result = elements[top--];
+        elements[top + 1] = null; // Supprime l'élément
+        // Si l'élément est une valeur spéciale, récupère la valeur réelle et met à jour le maximum
+        if (result > max) {
+            Integer realTop = max;
+            max = 2 * max - result;
+            return realTop;
+        } else {
+            // Sinon, retourne simplement l'élément
+            return result;
         }
-        E result = elements[top--];
-        elements[top + 1] = null;
-        return result;
     }
 
-    public E top() {
+    // La méthode pour obtenir l'élément au sommet de la pile sans le retirer
+    public Integer top() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");  // Si la pile est vide, une exception est levée.
         }
-        return elements[top];
+        // Si l'élément au sommet est une valeur spéciale, retourne la valeur réelle, sinon retourne l'élément
+        return (elements[top] > max) ? max : elements[top];
     }
 
+    // La méthode pour obtenir la taille de la pile
     public int size() {
         return top + 1;
     }
 
+    // La méthode pour vérifier si la pile est pleine
     public boolean isFull() {
-        return top + 1 == max;
+        return top + 1 == maxSize;
     }
 
+    // La méthode pour vérifier si la pile est vide
     public boolean isEmpty() {
         return top == -1;
     }
 
+    // La méthode pour convertir la pile en une chaîne de caractères
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        Integer currentMax = max; // Le maximum actuel pour la conversion des valeurs spéciales
         for (int i = top; i >= 0; i--) {
-            sb.append(elements[i].toString());
+            Integer rawElement = elements[i]; // L'élément brut dans le tableau
+            Integer element; // L'élément à ajouter à la chaîne de caractères
+            // Si l'élément brut est une valeur spéciale, convertit en valeur réelle et met à jour le maximum actuel
+            if (rawElement > currentMax) {
+                element = currentMax;
+                currentMax = 2 * currentMax - rawElement;
+            } else {
+                // Sinon, utilise simplement l'élément brut
+                element = rawElement;
+            }
+            sb.append(element);
             if (i > 0) {
                 sb.append(", ");
             }
         }
-        sb.append("\nEspace pour le stockage des valeurs maximales:").append(maxSize - max);
-        return sb.toString();
+        return "[" + sb + "]"; //
     }
 
-    // Ceci est la méthode getMax qui renvoie l'élément maximum de la pile.
-    public E getMax() {
+    // La méthode pour obtenir l'élément maximum de la pile
+    public Integer getMax() {
         if (isEmpty()) {
-            throw new IllegalStateException("La pile est vide.");
+            throw new IllegalStateException("La pile est vide."); // Si la pile est vide, une exception est levée.
         }
-        return elements[top].compareTo(elements[max]) < 0 ? elements[max] : elements[top];
+        return max;
     }
 }
+
 
 
