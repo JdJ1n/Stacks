@@ -3,7 +3,7 @@ package DoubleStack;
 public class Test {
     public static void main(String[] args) {
 
-        ArrayDoubleStack<Integer> stack = new ArrayDoubleStack<Integer>();
+        DoubleStack stack = new ArrayDoubleStack<Integer>();
 
         for (int i = 0; i < 52; i++) {
             stack.push(true, i);

@@ -2,6 +2,8 @@
 //Jiadong Jin 20150692
 package DuplicateEater;
 
+import Stack.Stack;
+
 public class ArrayStack<E> implements Stack<E> {
     private E[] elements;
     private int size;
@@ -47,6 +49,10 @@ public class ArrayStack<E> implements Stack<E> {
     // Méthode pour vérifier si la pile est vide.
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    public boolean isFull() {
+        return size == maxSize;
     }
 
     // Méthode pour obtenir la taille actuelle de la pile.

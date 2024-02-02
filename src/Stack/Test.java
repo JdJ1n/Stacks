@@ -4,7 +4,7 @@ package Stack;
 
 public class Test {
     public static void main(String[] args) {
-        ArrayStack<Integer> stack = new ArrayStack<Integer>();
+        Stack stack = new ArrayStack<Integer>();
         System.out.println("isEmpty: " + stack.isEmpty());
         for (int i = 0; i < 100; i++) {
             stack.push(i);

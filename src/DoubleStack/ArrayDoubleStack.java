@@ -22,12 +22,18 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
             System.out.println("La pile est pleine.");
             return false;
         }
-        if (one) {
-            elements[++top1] = element;
-        } else {
-            elements[--top2] = element;
+        try {
+            if (one) {
+                elements[++top1] = element;
+            } else {
+                elements[--top2] = element;
+            }
+            return true;
+        } catch (Exception e) {
+            System.out.println("Ce n'est pas possible car " + e);
+            return false;
         }
-        return true;
+
     }
 
     // Méthode pour retirer un élément de la pile. Lance une exception si la pile est vide.
@@ -69,15 +75,25 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
 
     // Méthode pour imprimer le contenu des deux piles.
     public void print() {
-        System.out.println("Contenu de la pile 1 :");
+        StringBuilder sb = new StringBuilder();
+        sb.append("Contenu de la pile 1 :\n[");
         for (int i = top1; i >= 0; i--) {
-            System.out.println(elements[i]);
+            sb.append(elements[i]);
+            if (i > 0) {
+                sb.append(", ");
+            }
         }
-        System.out.println("Contenu de la pile 2 :");
+        sb.append("]\nContenu de la pile 2 :\n[");
         for (int i = top2; i < maxSize; i++) {
-            System.out.println(elements[i]);
+            sb.append(elements[i]);
+            if (i < maxSize - 1) {
+                sb.append(", ");
+            }
         }
+        sb.append("]");
+        System.out.println(sb);
     }
+
 }
 
 

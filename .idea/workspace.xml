@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="allfilecreated">
+    <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="updataallstacks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/ArrayDoubleStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoubleStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleStack/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovingDay/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovingDay/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       <recent name="Stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Stack.Test">
+  <component name="RunManager" selected="Application.DoubleStack.Test">
     <configuration name="DoubleStack.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DoubleStack.Test" />
       <module name="tp1_ift2015" />
@@ -108,9 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoubleStack.Test" />
         <item itemvalue="Application.Stack.Test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.DoubleStack.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706774920583</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updataallstacks">
+      <option name="closed" value="true" />
+      <created>1706848661784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706848661784</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +207,7 @@
     <MESSAGE value="3stackfinished" />
     <MESSAGE value="specialstackfinished" />
     <MESSAGE value="allfilecreated" />
-    <option name="LAST_COMMIT_MESSAGE" value="allfilecreated" />
+    <MESSAGE value="updataallstacks" />
+    <option name="LAST_COMMIT_MESSAGE" value="updataallstacks" />
   </component>
 </project>
