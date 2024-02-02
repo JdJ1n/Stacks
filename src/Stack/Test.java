@@ -11,17 +11,19 @@ public class Test {
         }
 
         //stack.push("12")
-        System.out.println("toStr: " + stack.toString());
+        System.out.println("toStr: " + stack);
 
         System.out.println("top: " + stack.top());
 
         System.out.println("size: " + stack.size());
 
+        System.out.println("isFull: " + stack.isFull());
+
         System.out.println("isEmpty: " + stack.isEmpty());
 
         System.out.println("pop: " + stack.pop());
 
-        System.out.println("toStr: " + stack.toString());
+        System.out.println("toStr: " + stack);
     }
 }
 

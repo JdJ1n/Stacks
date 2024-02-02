@@ -49,6 +49,10 @@ public class ArrayStack<E> implements Stack<E> {
         return size == 0;
     }
 
+    public boolean isFull() {
+        return size == maxSize;
+    }
+
     // Méthode pour obtenir la taille actuelle de la pile.
     public int size() {
         return size;

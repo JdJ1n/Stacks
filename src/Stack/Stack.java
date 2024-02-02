@@ -13,5 +13,7 @@ public interface Stack<E> {
 
     boolean isEmpty();
 
+    boolean isFull();
+
     String toString();
 }

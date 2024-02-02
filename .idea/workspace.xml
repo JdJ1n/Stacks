@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="allfilecreated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovingDay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MovingDay/MovingDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/MovingDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DoubleStack.Test.executor": "Run",
-    "Application.Stack.Test.executor": "Run",
-    "Application.Test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Eclipse/workspace/tp1_ift2015/src/DuplicateEater"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DoubleStack.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Stack.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Eclipse/workspace/tp1_ift2015/src/DuplicateEater&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Eclipse\workspace\tp1_ift2015\src\DuplicateEater" />
@@ -59,6 +61,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Eclipse\workspace\tp1_ift2015\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Stack" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Stack.Test">
@@ -104,8 +109,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Stack.Test" />
-        <item itemvalue="Application.DoubleStack.Test" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.DoubleStack.Test" />
       </list>
     </recent_temporary>
   </component>

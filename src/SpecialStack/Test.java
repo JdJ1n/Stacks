@@ -3,7 +3,7 @@ package SpecialStack;
 // 这是一个测试类，用于测试 SpecialArrayStack 的所有功能。
 public class Test {
     public static void main(String[] args) {
-        SpecialArrayStack stack =new SpecialArrayStack();
+        SpecialStack stack =new SpecialArrayStack();
 
         stack.push(1);
         System.out.println("After pushing, the stack is: " + stack);

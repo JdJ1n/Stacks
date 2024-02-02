@@ -2,19 +2,21 @@
 //Jiadong Jin 20150692
 package SpecialStack;
 
-public interface SpecialStack<Integer> {
-    void push(Integer element);
+public interface SpecialStack<E> {
+    void push(E element);
 
-    Integer pop();
+    E pop();
 
-    Integer top();
+    E top();
 
     int size();
 
     boolean isEmpty();
 
+    boolean isFull();
+
     String toString();
 
-    Integer getMax();
+    E getMax();
 }
 
