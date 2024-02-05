@@ -2,14 +2,13 @@
 //Jiadong Jin 20150692
 package DuplicateEater;
 
-public class DuplicateEater {
-
-    // La méthode pairDestroyer prend un tableau de chaînes de caractères en entrée
-    public static int pairDestroyer(String[] words) {
+public class DuplicateEater<E> {
+    // La méthode pairDestroyer prend un tableau générique en entrée
+    public int pairDestroyer(E[] input) {
         // Création d'une pile pour enregistrer les mots
-        Stack<String> record = new ArrayStack<String>();
+        Stack<E> record = new ArrayStack<E>();
         // Parcourir tous les mots dans le tableau
-        for (String word : words) {
+        for (E word : input) {
             // Si la pile n'est pas vide et que le mot en haut de la pile est le même que le mot actuel
             if (!record.isEmpty() && record.top().equals(word)) {
                 // Supprimer le mot en haut de la pile
@@ -26,12 +25,17 @@ public class DuplicateEater {
     public static void main(String[] args) {
         // Création de deux tableaux de mots
         String[] words1 = {"pile", "liste", "liste", "file", "arbre"};
-        // Appeler la méthode pairDestroyer et imprimer le nombre de mots restants
-        System.out.println(pairDestroyer(words1)); // 3
         String[] words2 = {"arbre", "pile", "pile", "arbre"};
-        System.out.println(pairDestroyer(words2)); // 0
+        // Création d'un objet de la classe DuplicateEater
+        DuplicateEater<String> duplicateEater = new DuplicateEater<String>();
+        // Appeler la méthode pairDestroyer et imprimer le nombre de mots restants
+        System.out.println(duplicateEater.pairDestroyer(words1)); // 3
+        System.out.println(duplicateEater.pairDestroyer(words2)); // 0
+        System.out.println(duplicateEater.pairDestroyer(args));
     }
+
 }
+
 
 
 
