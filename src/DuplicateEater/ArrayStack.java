@@ -2,8 +2,6 @@
 //Jiadong Jin 20150692
 package DuplicateEater;
 
-import Stack.Stack;
-
 public class ArrayStack<E> implements Stack<E> {
     private E[] elements;
     private int size;

@@ -2,29 +2,27 @@
 //Jiadong Jin 20150692
 package DuplicateEater;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 public class DuplicateEater {
 
     public static int pairDestroyer(String[] words) {
-        Deque<String> stack = new ArrayDeque<>();
+        Stack<String> record = new ArrayStack<String>();
         for (String word : words) {
-            if (!stack.isEmpty() && stack.peek().equals(word)) {
-                stack.pop();
+            if (!record.isEmpty() && record.top().equals(word)) {
+                record.pop();
             } else {
-                stack.push(word);
+                record.push(word);
             }
         }
-        return stack.size();
+        return record.size();
     }
 
     public static void main(String[] args) {
         String[] words1 = {"pile", "liste", "liste", "file", "arbre"};
-        System.out.println(pairDestroyer(words1)); // Affiche 3
+        System.out.println(pairDestroyer(words1)); // 3
 
         String[] words2 = {"arbre", "pile", "pile", "arbre"};
-        System.out.println(pairDestroyer(words2)); // Affiche 0
+        System.out.println(pairDestroyer(words2)); // 0
     }
 }
+
 
