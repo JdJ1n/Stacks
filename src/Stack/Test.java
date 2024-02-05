@@ -24,6 +24,13 @@ public class Test {
         System.out.println("pop: " + stack.pop());
 
         System.out.println("toStr: " + stack);
+
+        for (int i = 0; i < 98; i++) {
+            stack.pop();
+        }
+        System.out.println("top: " + stack.top());
+        System.out.println("pop: " + stack.pop());
+        System.out.println("isEmpty: " + stack.isEmpty());
     }
 }
 

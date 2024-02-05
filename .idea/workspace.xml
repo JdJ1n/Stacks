@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="finish">
-      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,9 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/fr.dic",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
   }
 }]]></component>
@@ -67,7 +71,7 @@
       <recent name="Stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DuplicateEater">
+  <component name="RunManager" selected="Application.Stack.Test">
     <configuration name="DoubleStack.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DoubleStack.Test" />
       <module name="tp1_ift2015" />
@@ -135,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack.Test" />
         <item itemvalue="Application.DuplicateEater" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.DoubleStack.Test" />
-        <item itemvalue="Application.Stack.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -242,8 +246,27 @@
       <option name="project" value="LOCAL" />
       <updated>1707110374505</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finish">
+      <option name="closed" value="true" />
+      <created>1707110649100</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707110649100</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create classes" />
