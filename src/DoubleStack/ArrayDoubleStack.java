@@ -17,6 +17,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     }
 
     // Méthode pour ajouter un élément à la pile. Lance une exception si la pile est pleine.
+    @Override
     public boolean push(boolean one, E element) {
         if (isFull()) {
             System.out.println("La pile est pleine.");
@@ -37,6 +38,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     }
 
     // Méthode pour retirer un élément de la pile. Lance une exception si la pile est vide.
+    @Override
     public E pop(boolean one) {
         if (isEmpty(one)) {
             throw new IllegalStateException("La pile " + (one ? "1" : "2") + " est vide.");
@@ -51,6 +53,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     }
 
     // Méthode pour obtenir l'élément au sommet de la pile. Lance une exception si la pile est vide.
+    @Override
     public E top(boolean one) {
         if (isEmpty(one)) {
             throw new IllegalStateException("La pile " + (one ? "1" : "2") + " est vide.");
@@ -59,11 +62,13 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     }
 
     // Méthode pour obtenir la taille actuelle de la pile.
+    @Override
     public int size(boolean one) {
         return one ? top1 + 1 : maxSize - top2;
     }
 
     // Méthode pour vérifier si la pile est pleine.
+    @Override
     public boolean isFull() {
         return top1 + 1 == top2;
     }
@@ -74,6 +79,7 @@ public class ArrayDoubleStack<E> implements DoubleStack<E> {
     }
 
     // Méthode pour imprimer le contenu des deux piles.
+    @Override
     public void print() {
         StringBuilder sb = new StringBuilder();
         sb.append("Contenu de la pile 1 :\n[");

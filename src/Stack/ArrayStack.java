@@ -16,6 +16,7 @@ public class ArrayStack<E> implements Stack<E> {
 
     // Méthode pour ajouter un élément à la pile. Lance une exception si la pile est pleine.
     // Vérifie également si l'élément entrant est null et lance une exception si c'est le cas.
+    @Override
     public void push(E element) {
         if (element == null) {
             throw new IllegalArgumentException("L'élément ne peut pas être null.");
@@ -27,6 +28,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     // Méthode pour retirer un élément de la pile. Lance une exception si la pile est vide.
+    @Override
     public E pop() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");
@@ -37,6 +39,7 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     // Méthode pour obtenir l'élément au sommet de la pile. Lance une exception si la pile est vide.
+    @Override
     public E top() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");
@@ -45,20 +48,24 @@ public class ArrayStack<E> implements Stack<E> {
     }
 
     // Méthode pour vérifier si la pile est vide.
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }
 
+    @Override
     public boolean isFull() {
         return size == maxSize;
     }
 
     // Méthode pour obtenir la taille actuelle de la pile.
+    @Override
     public int size() {
         return size;
     }
 
     // Méthode pour obtenir une représentation en chaîne de la pile avec des éléments de haut en bas.
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = size - 1; i >= 0; i--) {

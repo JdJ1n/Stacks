@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="371bc93e-0608-4ada-a83c-23322aaa20a0" name="Changes" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/DuplicateEater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DuplicateEater/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DuplicateEater/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovingDay/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/ArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MovingDay/MovingDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MovingDay/MovingDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/SpecialArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpecialStack/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialStack/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JdJ1n&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="35c8eb0a-8934-4e7b-a899-43706988cc63" />
+        <option name="url" value="https://github.com/JdJ1n/Stacks.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/fr.dic",
+    "last_opened_file_path": "D:/Cours/2024.1 Hi/IFT2015/Dev1",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -71,7 +90,7 @@
       <recent name="Stack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DuplicateEater">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="DoubleStack.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DoubleStack.Test" />
       <module name="tp1_ift2015" />
@@ -139,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DuplicateEater" />
-        <item itemvalue="Application.Stack.Test" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.DuplicateEater" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Stack.Test" />
         <item itemvalue="Application.DoubleStack.Test" />
       </list>
     </recent_temporary>
@@ -262,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707116097557</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finish">
+      <option name="closed" value="true" />
+      <created>1707118651136</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707118651136</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -33,7 +33,7 @@ public class MovingDay {
         }
         // À la fin, on affiche si le déplacement est possible en 10 jours et combien de jours sont nécessaires
         System.out.println("Il est " + (day <= 10 ? "POSSIBLE" : "NON POSSIBLE")
-                + " de déplacer la ville dans les 10 jours, car on utilise " + day + " jours.");
+                + " de déplacer la ville dans les 10 jours, car " + day + " nombre de jours sont nécessaires.");
     }
 
     public void print(int day) {

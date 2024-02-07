@@ -15,6 +15,7 @@ public class SpecialArrayStack implements SpecialStack<Integer> {
     }
 
     // La méthode pour ajouter un élément à la pile
+    @Override
     public void push(Integer element) {
         if (isFull()) {
             throw new IllegalStateException("La pile est pleine.");  // Si la pile est pleine, une exception est levée.
@@ -36,6 +37,7 @@ public class SpecialArrayStack implements SpecialStack<Integer> {
     }
 
     // La méthode pour retirer un élément de la pile
+    @Override
     public Integer pop() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");  // Si la pile est vide, une exception est levée.
@@ -55,6 +57,7 @@ public class SpecialArrayStack implements SpecialStack<Integer> {
     }
 
     // La méthode pour obtenir l'élément au sommet de la pile sans le retirer
+    @Override
     public Integer top() {
         if (isEmpty()) {
             throw new IllegalStateException("La pile est vide.");  // Si la pile est vide, une exception est levée.
@@ -64,21 +67,25 @@ public class SpecialArrayStack implements SpecialStack<Integer> {
     }
 
     // La méthode pour obtenir la taille de la pile
+    @Override
     public int size() {
         return top + 1;
     }
 
     // La méthode pour vérifier si la pile est pleine
+    @Override
     public boolean isFull() {
         return top + 1 == maxSize;
     }
 
     // La méthode pour vérifier si la pile est vide
+    @Override
     public boolean isEmpty() {
         return top == -1;
     }
 
     // La méthode pour convertir la pile en une chaîne de caractères
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         Integer currentMax = max; // Le maximum actuel pour la conversion des valeurs spéciales

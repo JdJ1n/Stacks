@@ -1,6 +1,6 @@
 package SpecialStack;
 
-// 这是一个测试类，用于测试 SpecialArrayStack 的所有功能。
+
 public class Test {
     public static void main(String[] args) {
         SpecialStack stack = new SpecialArrayStack();
